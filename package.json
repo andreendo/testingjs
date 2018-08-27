@@ -1,0 +1,21 @@
+{
+  "name": "testingjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "andreendo",
+  "license": "ISC",
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true
+  },
+  "devDependencies": {
+    "jest": "^23.5.0"
+  },
+  "dependencies": {
+    "jest-cli": "^23.5.0"
+  }
+}
