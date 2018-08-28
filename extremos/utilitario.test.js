@@ -25,3 +25,8 @@ it("returns extremos for desc ordered array with 3 elements", () => {
     var v = [3, 2, 1];
     expect( acharExtremos(v) ).toEqual({maior : 3, indiceMaior : 0, menor : 1, indiceMenor : 2});
 });
+
+it("returns extremos for unordered array with 5 elements", () => {
+    var v = [0, -2, -2, 5, 5];
+    expect( acharExtremos(v) ).toEqual({maior : 5, indiceMaior : 3, menor : -2, indiceMenor : 1});
+});

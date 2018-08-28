@@ -1,5 +1,5 @@
 function acharExtremos(v) {
-    if(v == null || v == undefined)
+    if(v == null)
         throw "vetor nao pode ser nulo";
     
     if(! v.length)
