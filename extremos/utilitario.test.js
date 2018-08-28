@@ -1,7 +1,7 @@
 const acharExtremos = require("./utilitario");
 
 it("thows an exception for null", () => {
-    expect( () => { acharExtremos(null) } ).toThrowError("vetor nao pode ser nulo");
+    expect( () => { acharExtremos(null); } ).toThrowError("vetor nao pode ser nulo");
 });
 
 it("throws an exception for undefined", () => {
