@@ -13,14 +13,14 @@
     "collectCoverage": true
   },
   "devDependencies": {
-    "jest": "^23.5.0",
+    "jest": "^24.8.0",
     "jshint": "^2.9.6",
     "stryker": "^0.29.1",
     "stryker-api": "^0.21.0",
-    "stryker-javascript-mutator": "^0.9.1",
+    "stryker-javascript-mutator": "^0.14.1",
     "stryker-jest-runner": "^1.2.0"
   },
   "dependencies": {
-    "jest-cli": "^23.5.0"
+    "jest-cli": "^24.8.0"
   }
 }
