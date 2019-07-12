@@ -14,11 +14,10 @@
   },
   "devDependencies": {
     "jest": "^24.8.0",
-    "jshint": "^2.9.6",
-    "stryker": "^0.29.1",
-    "stryker-api": "^0.21.0",
-    "stryker-javascript-mutator": "^0.14.1",
-    "stryker-jest-runner": "^1.2.0"
+    "jshint": "^2.10.2",
+    "@stryker-mutator/core": "^1.0.0",
+    "@stryker-mutator/javascript-mutator": "^1.0.0",
+    "@stryker-mutator/jest-runner": "^1.0.0"
   },
   "dependencies": {
     "jest-cli": "^24.8.0"
