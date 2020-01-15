@@ -9,28 +9,25 @@ class PortaoController {
         this.cancela = new Cancela();
         this.automovelDAO = new AutomovelDAO();
         this.registroDAO = new RegistroDAO();
-
     }
-    
+
     abrir(tag) {
         this.display.limpar();
-        if(tag == "ERRO") {
-            this.display.mostrarMsg("Automovel nao possui TAG. Por favor voltar!");
+        if (tag === 'ERRO') {
+            this.display.mostrarMsg('Automovel nao possui TAG. Por favor voltar!');
             return false;
         }
-        else {
-            var auto = this.automovelDAO.getByTagName(tag);
-            if(auto == null) {
-                this.display.mostrarMsg("TAG desconhecida. Por favor, voltar!");
-                return false;
-            }
-            else {
-                this.display.mostrarMsg("Bem-Vindo, " + auto.proprietario +"!");
-                this.cancela.levantar();
-                this.registroDAO.registrarEntrada(auto.placa, auto.proprietario);
-                return true;
-            }
+
+        const auto = this.automovelDAO.getByTagName(tag);
+        if (auto === null) {
+            this.display.mostrarMsg('TAG desconhecida. Por favor, voltar!');
+            return false;
         }
+
+        this.display.mostrarMsg(`Bem-Vindo, ${auto.proprietario}!`);
+        this.cancela.levantar();
+        this.registroDAO.registrarEntrada(auto.placa, auto.proprietario);
+        return true;
     }
 }
 
